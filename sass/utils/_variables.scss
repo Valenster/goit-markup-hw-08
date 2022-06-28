@@ -1,0 +1,87 @@
+
+// Карта, словник кольорів
+
+$colors:(
+'title-text': #212121,
+'text':#757575,
+'background':#ffffff,
+'accent': #2196F3,
+);
+
+@function getColor($key){
+    @return map-get($colors, $key);
+} 
+
+// Змінні
+
+$t-duration: 250ms;
+$t-t-function: cubic-bezier(0.4, 0, 0.2, 1);
+$phone: 480px;
+$tablet: 768px;
+$pc: 1200px;
+
+
+
+
+body{
+    background-color: getColor('background');
+    color: getColor('title-text');
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+
+@mixin flex($type:space-between) {
+    display: flex;
+    justify-content: $type;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container{ 
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* outline: 2px solid tomato; */
+}
+
+
+h1, h2, h3, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    list-style: none;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    transition: color $t-duration 
+    $t-t-function, background-color $t-duration $t-t-function;
+    &:hover, &:focus{
+        color: getColor('accent');
+    }
+}
+

@@ -1,0 +1,65 @@
+@media screen and (min-width:$pc) {
+    .header__container{
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
+
+    .contacts-nav{
+        display: flex;
+        margin-left: 305px;
+    }
+
+    .works{
+        display: block;
+        margin-top: 94px;
+    } 
+
+    .contacts-nav__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    // .clients__item:not(:last-child){
+    //     margin-left: ;
+    // }
+
+
+    .footer__container{
+        display: flex;
+    }
+
+    .footer__box{
+        padding-top: 60px;
+    }
+
+    .join{
+        margin-left: 75px;
+        padding-top: 72px;
+    }
+
+    .spam-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 93px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    }
+
+    .spam-form__input{
+        width: 358px;
+    }
+
+    .portfolio-nav{
+        margin-bottom: 50px;
+    }
+
+    .portfolio__item{
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}

@@ -1,0 +1,25 @@
+.peculiarities{
+    display: block;
+}
+
+
+
+.feature__box{
+    @include flex(center);
+    background-color: #F5F4FA;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.feature__title{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature__text{
+    line-height: 1.71;
+    color: getColor('text');
+}

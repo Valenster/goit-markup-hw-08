@@ -1,0 +1,116 @@
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+
+}
+
+.portfolio-nav__item:not(:last-child){
+    margin-right: 5px;
+}
+
+.portfolio-nav__button, .portfolio-nav__first-button{
+    min-width: 128px;
+    height: 38px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63px;
+    color: getColor("title");
+    background: #F5F4FA;
+    border: none;
+    cursor: pointer;
+    transition: background-color $t-duration $t-t-function, 
+    color $t-duration $t-t-function, 
+    box-shadow $t-duration $t-t-function;
+}
+
+.portfolio-nav__first-button{
+    min-width: 73px;
+}
+
+.portfolio-nav__button:hover, 
+.portfolio-nav__first-button:hover,
+.portfolio-nav__button:focus,
+.portfolio-nav__first-button:focus{
+    background-color: getColor('accent');
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
+     rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.portfolio__photo-card{
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.portfolio__examples{
+    transition: box-shadow $t-duration
+    $t-t-function;
+}
+
+.portfolio__examples:hover,
+.portfolio__examples:focus
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.portfolio__thumb{
+    position: relative;
+    // width: max-content;
+    overflow: hidden;
+}
+
+.portfolio__image{
+    width: 100%;
+}
+
+.portfolio__overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform $t-duration
+    $t-t-function;
+}
+
+.portfolio__examples:hover .portfolio__overlay,
+.portfolio__examples:focus .portfolio__overlay{
+    transform: translateY(0);
+    transition: transform $t-duration
+    $t-t-function;
+}
+
+.portfolio__overlay-text{
+    font-size: 18px;
+    line-height: 1.56;
+    color: #FFFFFF;
+    padding: 63px 24px;
+
+}
+    
+
+.portfolio__title{
+    color: getColor('title-text');
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio__title-text{
+    font-size: 16px;
+    line-height: 1.88;
+    color: getColor('text');
+    margin-top: 4px;
+}
+
+

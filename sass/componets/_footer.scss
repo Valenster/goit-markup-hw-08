@@ -1,0 +1,109 @@
+.footer{
+    /* max-width: 1600px; */
+    background-color:#2F303A;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.footer__box{
+    // padding-top: 60px;
+}
+
+
+.footer__logo-part{
+    color: getColor('background');
+}
+
+.address{
+    margin-top: 20px;
+}
+
+.address__city{
+    color: getColor('background');
+    margin-bottom: 9px;
+    font-style: normal;
+    line-height: 1.71;
+}
+
+.address__link{
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);    
+}
+
+.address__link:not(:last-child){
+    margin-bottom: 9px;
+}
+
+
+.join__title, .spam-form__label{ 
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.join__title{
+    margin-bottom: 20px;
+}
+
+.join__list{
+    display: flex;
+    justify-content: center;
+}
+
+.join__link{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.join__link-icon{
+    fill: #ffffff;
+}
+
+.join__item:not(:last-child){
+    margin-right: 10px;
+}
+
+
+
+
+
+.spam-form__input{
+    display: block;
+    margin-top: 20px;
+    padding: 15px 16px 15px 16px;
+    border-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A !important;
+    outline: none;
+}
+
+.spam-form__input:focus{
+    color: var(--background-color);
+}
+
+.spam-form__input::placeholder{
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);  
+}
+
+.spam-form__button{
+    position: relative;
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;
+    align-self:flex-end;
+}
+
+
+.spam-form__icon-send{
+    position: absolute;
+    margin-left: 10px;
+    top: center;
+    transform: translateY(-50%);
+}

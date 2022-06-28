@@ -1,0 +1,28 @@
+
+  .clients{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+  }
+
+.clients__link{
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    @include flex(center);
+    transition: border-color $t-duration $t-t-function;
+    &:hover{
+         border: 1px solid getColor('accent');
+         & .clients__link-icon{
+            fill: getColor('accent');
+         }
+    }
+    &:focus{
+         border: 1px solid getColor('accent');
+    }
+}
+
+.clients__link-icon{
+    fill: #AFB1B8;
+    transition: fill $t-duration $t-t-function;
+}

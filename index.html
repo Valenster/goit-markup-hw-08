@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__flex">
+                <a href="./index.html" class="logo link"><span class="logo__part">Web</span>Studio</a>
+                <button data-menu-button class="header__button" aria-expanded="false" aria-controls="header-menu">
+                    <svg width=40 height="40">
+                        <use class="header__menu-open" href="./images/symbol-defs-squoash.svg#menu-open"></use>
+                        <use class="header__close-menu" href="./images/symbol-defs-squoash.svg#close-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div data-menu class="header__menu" id="header-menu">
+                <nav>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <div class="site-nav__current">
+                                <a href="" class="site-nav__link link site-nav__link--current">Студия</a>
+                            </div>
+                        </li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts-nav list">
+                    <li class="contacts-nav__item">
+                        <a href="tel:+380961111111" class="contacts-nav__tel link">
+                            <svg width="10" height="16" class="contacts-nav__icon">
+                                <use href="./images/symbol-defs-squoash.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="contacts-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-nav__link link">
+                            <svg width="12" height="16" class="contacts-nav__icon">
+                                <use href="./images/symbol-defs-squoash.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-nav__item">
+                        <a href="tel:+380961111111" class="contacts-nav__link link">
+                            <svg width="10" height="16" class="contacts-nav__icon">
+                                <use href="./images/symbol-defs-squoash.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <ul class="social-nav list">
+                    <li class="social-nav__item">
+                        <a class="social-nav__link link" href="">Instagram</a>
+                    </li>
+                    <li class="social-nav__item">
+                        <a class="social-nav__link link" href="">Twitter</a>
+                    </li>
+                    <li class="social-nav__item">
+                        <a class="social-nav__link link" href="">Facebook</a>
+                    </li>
+                    <li class="social-nav__item">
+                        <a class="social-nav__link link" href="">Linkedln</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <!-- </header> -->
+    <main>
+        <!-- Герой -->
+        <section class="section hero">
+            <div class="container">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <button data-modal-open type="button" class="hero__button button">Заказать услугу</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <ul class="list peculiarities">
+                    <li class="peculiarities__item feature">
+                        <div class="feature__box">
+                            <svg width="65" height="70">
+                                <use href="./images/symbol-defs-squoash.svg#icon-antenna-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Внимание к деталям</h3>
+                        <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию
+                            позиции.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <div class="feature__box">
+                            <svg width="65" height="70">
+                                <use href="./images/symbol-defs-squoash.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Пунктуальность</h3>
+                        <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет за собой.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <div class="feature__box">
+                            <svg width="65" height="70">
+                                <use href="./images/symbol-defs-squoash.svg#icon-diagram-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Планирование</h3>
+                        <p class="feature__text">Равным образом консультация с широким активом в значительной степени
+                            обуславливает.</p>
+                    </li>
+                    <li class="peculiarities__item">
+                        <div class="feature__box">
+                            <svg width="65" height="70">
+                                <use href="./images/symbol-defs-squoash.svg#icon-astronaut-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Современные технологии</h3>
+                        <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="container works">
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                <ul class="works__list list">
+                    <li>
+                        <div class="works__thumb">
+                            <img 
+                            srcset="./images/img.jpg 1x, ./images/doing1@2x.jpg 2x"
+                            src="./images/img.jpg" width="370" alt="Людина друкує текст">
+                            <p class="works__overlay">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="works__thumb">
+                            <img 
+                            srcset="./images/box-2.jpg 1x, ./images/doing2@2x.jpg 2x"
+                            src="./images/box-2.jpg" width="370" alt="Людина і тел">
+                            <p class="works__overlay">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="works__thumb">
+                            <img 
+                            srcset="./images/box-3.jpg 1x, ./images/doing3@2x.jpg 2x"
+                            src="./images/box-3.jpg" width="370" alt="Людина і планшет">
+                            <p class="works__overlay">Дизайнерские решения</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section team">
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="team__list list">
+                    <li class="team__list-item">
+                        <div class="employee">
+                            <img 
+                            srcset="./images/team1.jpg 260w, ./images/team1@2x.jpg 540w"
+                            sizes="(min-width:1200px) 25vw, (min-width:481px) 50vw, 100vw"
+                            src="./images/team1.jpg" alt="Ігор">
+                            <h3 class="employee__name">Игорь Демьяненко</h3>
+                            <p class="employee__position">Product Designer</p>
+                            <ul class="employee__social-media">
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="16" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="24" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__list-item">
+                        <div class="employee">
+                            <img 
+                            srcset="./images/team2.jpg 260w, ./images/team2@2x.jpg 540w"
+                            sizes="(min-width:1200px) 25vw, (min-width:481px) 50vw, 100vw"
+                            src="./images/team2.jpg" alt="Ольга">
+                            <h3 class="employee__name">Ольга Репина</h3>
+                            <p class="employee__position">Frontend Developer</p>
+                            <ul class="employee__social-media">
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="16" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="24" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__list-item">
+                        <div class="employee">
+                            <img srcset="./images/team3.jpg 260w, ./images/team3@2x.jpg 540w"
+                            sizes="(min-width:1200px) 25vw, (min-width:481px) 50vw, 100vw"
+                            src="./images/team3.jpg" alt="Микола">
+                            <h3 class="employee__name">Николай Тарасов</h3>
+                            <p class="employee__position">Marketing</p>
+                            <ul class="employee__social-media">
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="16" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="24" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item list">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__list-item">
+                        <div class="employee">
+                            <img srcset="./images/team4.jpg 260w, ./images/team4@2x.jpg 540w"
+                            sizes="(min-width:1200px) 25vw, (min-width:481px) 50vw, 100vw"
+                            src="./images/team4.jpg" alt="Михайло">
+                            <h3 class="employee__name">Михаил Ермаков</h3>
+                            <p class="employee__position">Product Designer</p>
+                            <ul class="employee__social-media list">
+                                <li class="employee__list-item">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="employee__list-item">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="16" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="24" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="employee__list-item">
+                                    <a href="" class="employee__link link">
+                                        <svg width="20" height="20" class="employee__link-icon">
+                                            <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Постоянные клиенты</h2>
+                <ul class="clients">
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="41" height="47">
+                                <use href="./images/symbol-defs-squoash.svg#icon--YAGO"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="40" height="52">
+                                <use href="./images/symbol-defs-squoash.svg#icon-tag-line-here1"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="44" height="42">
+                                <use href="./images/symbol-defs-squoash.svg#icon-eg-company"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="85" height="41">
+                                <use href="./images/symbol-defs-squoash.svg#icon-foster-peters"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="63" height="46">
+                                <use href="./images/symbol-defs-squoash.svg#icon-brand"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="clients__item list">
+                        <a href="" class="clients__link">
+                            <svg class="clients__link-icon" width="94" height="44">
+                                <use href="./images/symbol-defs-squoash.svg#icon-tag-line"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button data-modal-close class="modal__close-button">
+                    <svg width="11" height="11">
+                        <use href="./images/symbol-defs-squoash.svg#icon-Vector"></use>
+                    </svg>
+                </button>
+                <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+                <form class="form">
+                    <label class="form__label">
+                        <input type="text" name="name" class="form__input" placeholder=" " required>
+                        <svg width="18" height="18" class="form__icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-person"></use>
+                        </svg>
+                        <span class="form__text">Имя</span>
+                    </label>
+                    <label class="form__label">
+                        <input type="number" name="number" class="form__input" placeholder=" " required>
+                        <svg width="18" height="18" class="form__icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-phone"></use>
+                        </svg>
+                        <span class="form__text">Телефон</span>
+                    </label>
+                    <label class="form__label">
+                        <input type="email" name="email" class="form__input" placeholder=" ">
+                        <svg width="18" height="18" class="form__icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-email"></use>
+                        </svg>
+                        <span class="form__text">Почта</span>
+                    </label>
+                    <label class="form__label">
+                        <span class="form__comment-text">Комментарий</span>
+                        <textarea name="comment" class="form__textarea" rows="5" maxlength="25"></textarea>
+                    </label>
+                    <label class="form__mail-consent">
+                        <input type="checkbox" name="Mailing-Consent" class="form__checkbox">
+                        <svg width="16" height="15" class="form__icon-rectangle">
+                            <use href="./images/symbol-defs-squoash.svg#icon-checkbox"></use>
+                        </svg>
+                        <svg width="16" height="15" class="form__icon-check">
+                            <use href="./images/symbol-defs-squoash.svg#icon-check"></use>
+                        </svg>
+                        <span class="form__consent-text">Соглашаюсь с рассылкой и принимаю <a href=""
+                                class="form__link">Условия договора</a></span>
+                    </label>
+                    <button type="submit" class="modal__send-button button">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+        <!-- <section class="diablo">
+            <button class="button">Замовити Бебру</button>
+            <form>
+                <label>
+                  Username
+                  <input type="text" name="username" autofocus />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" />
+                </label>
+                <button type="submit">Submit</button>
+              </form>
+        </section> -->
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__container-flex">
+                <div class="footer__box">
+                    <a href="" class="logo logo link"><span class="footer__logo-part">Web</span>Studio</a>
+                    <address class="address">
+                        <p class="address__city">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a href="mailto:" class="address__link link">info@example.com</a>
+                        <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+                    </address>
+                </div>
+                <div class="join">
+                    <h3 class="join__title">присоединяйтесь</h3>
+                    <ul class="join__list list">
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20" class="join__link-icon">
+                                    <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="16" class="join__link-icon">
+                                    <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="24" class="join__link-icon">
+                                    <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20" class="join__link-icon">
+                                    <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                    </ul>
+                </div>
+            </div>
+            <form class="spam-form">
+                <label class="spam-form__label">
+                    Подпишитесь на рассылку
+                    <input type="email" name="email" class="spam-form__input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="spam-form__button button">Подписаться
+                    <svg class="spam-form__icon-send" width="24" height="24">
+                        <use href="./images/symbol-defs-squoash.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
+</body>
+</html>

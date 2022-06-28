@@ -1,0 +1,67 @@
+.team{
+    background-color: #F5F4FA;
+}
+
+.team__list{
+    display: block;
+}
+        
+
+.employee{
+    width: 100%;
+    padding-bottom: 24px;
+    background-color: getColor('background');
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.employee__name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.employee__position{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: getColor('text');
+    margin-bottom: 16px;
+}
+
+.employee__social-media{
+    @include flex(center);
+}
+
+.employee__list-item:not(:last-child){
+    margin-right: 10px;
+}
+
+
+.employee__link, .join__link{
+    @include flex(center);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    &:hover{
+        & .employee__link-icon{
+            fill: getColor('background');
+        }
+        background-color: getColor('accent');
+        }
+    &:focus{
+        & .employee__link-icon{
+            fill: getColor('background');
+        }
+        background-color: getColor('accent');
+        }
+    }
+
+.employee__link-icon{
+    fill: #AFB1B8;
+}

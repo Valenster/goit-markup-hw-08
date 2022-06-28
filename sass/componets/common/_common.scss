@@ -1,0 +1,42 @@
+.button{
+display: inline-block;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88px;
+letter-spacing: 0.06em;
+
+height: 50px;
+
+border: 0;
+border-radius: 4px;
+
+background-color: getColor('accent');
+color: #FFFFFF;
+
+cursor: pointer;
+transition: background-color $t-duration $t-t-function;
+    &:hover, &:focus{
+        background-color: teal;
+    }
+}
+
+.section-title{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+} 
+
+
+.logo, .logo__part{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo{
+    color: getColor('accent');
+}

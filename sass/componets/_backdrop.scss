@@ -1,0 +1,203 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: $t-t-function;
+    transition-delay: 50ms;
+}  
+
+.is-hidden{
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    transition-property: transform, opacity;
+    transition-duration: 500ms, 1ms;
+    transition-timing-function: $t-t-function, linear;
+    transition-delay: 50ms, 430ms;
+
+    
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // width: 528px;
+    // height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 60px 40px 60px 40px;
+    z-index: 1000;
+}
+
+.modal__close-button{
+    @include flex(center);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%; 
+    transition: fill $t-duration $t-t-function;
+}
+
+
+/* Розмітка форми Передзвону */
+
+
+
+.modal__title{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__label:not(:last-child){
+    position: relative;
+    display: block;
+    margin-bottom: 28px;
+}
+
+.form__label:nth-child(3){
+    margin-bottom: 10px;
+}
+
+.form__label:nth-child(4){
+    margin-bottom: 20px;
+}
+
+
+.form__input{
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 13px 11px 42px;
+    transition: border-color $t-duration $t-t-function;
+}
+
+.form__text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-left: 42px;
+    color: #757575;
+    outline: none;
+    transform: translateY(-50%);
+    transition: transform $t-duration $t-t-function;
+}
+
+.form__textarea{
+    resize: none;
+    width: 100%;
+    padding: 12px 16px 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    outline: none;
+    transition: border-color $t-duration $t-t-function;
+}
+
+.form__input:hover,
+.form__input:focus,
+.form__textarea:hover,
+.form__textarea:focus{
+    border-color: getColor('accent');
+    outline: none;
+}
+
+/* Чому не робе при фокусі? */
+
+.form__label:hover .form__icon,
+.form__label:focus .form__icon{
+    fill: getColor('accent');
+}
+
+
+.form__input:not(:placeholder-shown)~.form__text,
+.form__label:hover .form__text{
+    transform: translateY(-40px);
+}
+
+.form__icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 15px;
+}
+
+.form__comment-text{
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: getColor('text');
+    margin-bottom: 4px;
+}
+
+.form__mail-consent{
+    @include flex(center);
+}
+
+.form__consent-text{
+    line-height: 1.71;
+    color: getColor('text');
+    margin-left: 8px;
+}
+
+.form__link{
+    color: getColor('accent');
+}
+
+.form__checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__checkbox:checked~.form__icon-rectangle{
+    display: none;
+}
+
+.form__icon-check{
+    display: none;
+    pointer-events: none;
+}
+
+.form__checkbox:checked~.form__icon-check{
+    display: block;
+}
+
+.modal__send-button{
+    display: block;
+    padding: 10px 55px 10px 56px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__close-button:hover,
+.modal__close-button:focus{
+    fill: getColor('accent');
+}
